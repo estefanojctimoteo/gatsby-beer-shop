@@ -38,7 +38,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) !important;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
   background-position: center;
   background-size: cover;
 }
@@ -54,7 +54,7 @@ h6 {
 
 .btn-yellow:hover {
   background: var(--mainYellow);
-  color: var(--mainBrown) !important;
+  color: var(--mainBrown);
 }
 
 .footer {
