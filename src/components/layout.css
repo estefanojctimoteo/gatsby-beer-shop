@@ -60,3 +60,8 @@ h6 {
 .footer {
   background: var(--mainBrown);  
 }
+
+#navbar-logo {
+  width: 60% !important;
+  max-width: 4rem;
+}
