@@ -33,7 +33,7 @@ export const query = graphql`
       }
     }
   }
-  menu: allContentfulCofeeItem {
+  menu: allContentfulCofeeItem ( filter: {node_locale: {eq: "en-US"}} ){
     edges {
       node {
         id
