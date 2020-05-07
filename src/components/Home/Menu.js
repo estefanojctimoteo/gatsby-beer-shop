@@ -16,7 +16,7 @@ export default class Menu extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: props.items.edges, //[],
+      items: [], //props.items.edges, //[],
       beerItems: props.items.edges,
       categories: getCategories(props.items.edges)
     }
