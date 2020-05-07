@@ -17,9 +17,9 @@ export default class Menu extends Component {
     super(props)
 
     this.state = {
-      items: [], //props.items.edges, //[],
-      beerItems: [], //props.items.edges,
-      categories: [], //getCategories(props.items.edges)
+      items: props.items.edges, //[],
+      beerItems: props.items.edges,
+      categories: getCategories(props.items.edges)
     }
     //console.log('props.items.edges: ', props.items.edges)
     this.handleItems = this.handleItems.bind(this)
