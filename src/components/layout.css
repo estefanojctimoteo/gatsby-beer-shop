@@ -65,6 +65,7 @@ h6 {
   width: 60% !important;
   max-width: 4rem;
 }
-.menu {
+.menu,
+.contact {
   background: var(--mainGrey);
 }
