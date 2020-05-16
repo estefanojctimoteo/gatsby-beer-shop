@@ -12,8 +12,8 @@ export default function Info() {
             <p className='lead text-muted mb-5'>
               lorem daod saoid asiod asiod ais dpas dpoas dpoias pdos apodi aspood psaoi dpa dposa pdois apodi spai
             </p>
-            <Link to='/about/'>
-              <button className='btn text-uppercase btn-yellow'>about page</button>
+            <Link to='/empresa/'>
+              <button className='btn text-uppercase btn-yellow'>empresa</button>
             </Link>
           </div>
         </div>

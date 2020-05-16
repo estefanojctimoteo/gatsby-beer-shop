@@ -1,9 +1,11 @@
 :root {
   --mainBrown:#2d1e1f;
   --mainYellow:rgb(255, 158, 9);
+  --mainGolden: rgb(179, 141, 91);
   --mainGrey:#ece8dc;
   --mainWhite:#fff;
   --mainDark:#222;
+  --fullDark:rgb(0, 0, 0);
 }
 
 body {
@@ -26,25 +28,64 @@ h6 {
   color: var(--mainYellow);  
 }
 
+.text-white {
+  color: var(--mainWhite);
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
 .cart-icon {
   cursor: pointer;
   color: var(--mainYellow);
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+  display: none;
 }
 
-.default-background, 
-.about-background {
-  min-height: 100vh;
+.default-background {
+  min-height: 100vh;  
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
-  background-position: center;
-  background-size: cover;
+  /*background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));*/
+  background-position: center; 
+  background-size: initial;
 }
 
 .about-background {
-  min-height: 60vh;
+  min-height: 88vh;  
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));*/
+  background-position: right; 
+  background-size: initial;
+}
+
+.marginLeft2rem {
+  margin-left: 3rem;
+}
+
+.prContainer {
+  width: 790px;
+  margin-left: 4rem;
+  /* border: 2px solid magenta; */
+}
+
+.paperFont {
+  font-size: 1.3rem;
+  color: var(--mainGolden);
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif !important;
+}
+
+.paperFont-title {
+  color: var(--mainWhite);
+  font-size: 5.5rem;
 }
 
 .btn-yellow {
@@ -57,15 +98,30 @@ h6 {
   color: var(--mainBrown);
 }
 
+.btn-hidden {
+  display: none;
+}
+
 .footer {
-  background: var(--mainBrown);  
+  background: var(--fullDark);  
 }
 
 #navbar-logo {
-  width: 60% !important;
-  max-width: 4rem;
+  width: 50% !important;
+  max-width: 3.7rem;
 }
+
 .menu,
 .contact {
-  background: var(--mainGrey);
+  background: var(--mainGrey);  
 }
+
+/*
+.about-background,
+.default-background,
+.footer,
+.menu,
+.contact {
+  max-width: 99%;
+}
+*/

@@ -8,7 +8,7 @@ const getCategories = items => {
   })
   let tempCategories = new Set(tempItems)
   let categories = Array.from(tempCategories)
-  categories = ['all',...categories]
+  categories = ['todos',...categories]
   return categories
 }
 
@@ -27,7 +27,7 @@ export default class Menu extends Component {
   handleItems = (category) => {
     console.log('category: ', category)
     let tempItems = [...this.state.items]
-    if (category === 'all') {
+    if (category === 'todos') {
       this.setState({
         ...this.state,
         beerItems: tempItems,
@@ -50,7 +50,7 @@ export default class Menu extends Component {
       return (
         <section className='menu py-5' >
           <div className='container'>
-            <Title title='best of our menu'></Title>
+            <Title title='nossos produtos'></Title>
             {/* categories */}
             <div className='row mb-5'>
               <div className='col-10 mx-auto text-center'>

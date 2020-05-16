@@ -30,7 +30,18 @@ module.exports = {
         apiKey: process.env.SNIPCART_API_KEY,
         autopop: true
 			}
-		},    
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Fjalla One`,
+            variants: [`400`]
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
