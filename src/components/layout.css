@@ -70,13 +70,13 @@ h6 {
 }
 
 .prContainer {
-  width: 790px;
-  margin-left: 4rem;
+  width: 320px; /* 790px; */
+  margin-left: .8rem; /* 4rem; */
   /* border: 2px solid magenta; */
 }
 
 .paperFont {
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* 1.3rem; */
   color: var(--mainGolden);
   letter-spacing: 0.9px;
   text-transform: uppercase;
@@ -85,8 +85,30 @@ h6 {
 
 .paperFont-title {
   color: var(--mainWhite);
-  font-size: 5.5rem;
+  font-size: 3.5rem; /* 5.5rem; */
 }
+
+@media (min-width: 675px) {
+  .prContainer {
+    width: 790px;
+    margin-left: 4rem;
+    /* border: 2px solid magenta; */
+  }
+  
+  .paperFont {
+    font-size: 1.3rem;
+    color: var(--mainGolden);
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif !important;
+  }
+  
+  .paperFont-title {
+    color: var(--mainWhite);
+    font-size: 5.5rem;
+  }  
+}
+
 
 .btn-yellow {
   color: var(--mainYellow);
