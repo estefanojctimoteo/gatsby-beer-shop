@@ -14,7 +14,7 @@ import Contact from '../components/Home/Contact'
 
 const IndexPage = ({ data }) => {
   let backroundImage = [
-    `linear-gradient(to right, rgba(179, 141, 91, 0.5), rgba(179, 141, 91, 0.1))`,
+    `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
     data.img.childImageSharp.fluid
   ]  
   return (
@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => {
 }
 export const query = graphql`
 {
-  img: file(relativePath: {eq: "OLD-do-porao-01.jpg"}) {
+  img: file(relativePath: {eq: "IMG_3935_2.jpg"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG

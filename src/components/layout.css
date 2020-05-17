@@ -48,19 +48,23 @@ h6 {
 .default-background {
   min-height: 100vh;  
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  /*background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));*/
   background-position: center; 
-  background-size: initial;
+  background-size: cover;
 }
 
+.default-background h1 {
+  margin-top: 10rem;
+  font-size: 2rem;
+  max-width: 500px;  
+  text-align: center;
+}
 .about-background {
   min-height: 88vh;  
   display: flex;
   align-items: center;
   justify-content: left;
-  /*background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));*/
   background-position: right; 
   background-size: initial;
 }
@@ -70,13 +74,12 @@ h6 {
 }
 
 .prContainer {
-  width: 320px; /* 790px; */
-  margin-left: .8rem; /* 4rem; */
-  /* border: 2px solid magenta; */
+  width: 320px;
+  margin-left: .8rem;
 }
 
 .paperFont {
-  font-size: 1.1rem; /* 1.3rem; */
+  font-size: 1.1rem;
   color: var(--mainGolden);
   letter-spacing: 0.9px;
   text-transform: uppercase;
@@ -85,14 +88,13 @@ h6 {
 
 .paperFont-title {
   color: var(--mainWhite);
-  font-size: 3.5rem; /* 5.5rem; */
+  font-size: 3.5rem;
 }
 
 @media (min-width: 675px) {
   .prContainer {
     width: 790px;
     margin-left: 4rem;
-    /* border: 2px solid magenta; */
   }
   
   .paperFont {
@@ -137,13 +139,3 @@ h6 {
 .contact {
   background: var(--mainGrey);  
 }
-
-/*
-.about-background,
-.default-background,
-.footer,
-.menu,
-.contact {
-  max-width: 99%;
-}
-*/
