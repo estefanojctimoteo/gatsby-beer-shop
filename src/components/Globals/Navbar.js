@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.png'
+import logo from '../../images/do_porao_logo_claro.jpg'
 import { FaCartArrowDown } from 'react-icons/fa'
 
 export default class Navbar extends Component {
