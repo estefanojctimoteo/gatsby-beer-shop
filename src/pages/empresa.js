@@ -12,7 +12,7 @@ import Contact from '../components/Home/Contact'
 
 const AboutPage = ({ data }) => {
   let backroundImage = [
-    `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1))`,
+    `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5))`,
     data.img.childImageSharp.fluid
   ]
   return (

@@ -14,7 +14,7 @@ import Contact from '../components/Home/Contact'
 
 const IndexPage = ({ data }) => {
   let backroundImage = [
-    `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))`,
+    `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))`,
     data.img.childImageSharp.fluid
   ]  
   return (
